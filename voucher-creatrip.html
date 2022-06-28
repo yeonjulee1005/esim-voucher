@@ -1,0 +1,312 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    @font-face {
+      font-family: 'S-CoreDream-3Light';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'S-CoreDream-4Regular';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'S-CoreDream-5Medium';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'S-CoreDream-6Bold';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+    /* GENERAL STYLE RESETS */
+    body, #bodyTable { max-width: 700px !important; width: 100% !important; height: 100% !important; margin: 0 auto; padding: 0; }
+    #bodyTable { padding: 20px 0 30px 0; background-color: #fff; }
+    img, a img { border: 0; outline: none; text-decoration: none; }
+    .imageFix { display: block; }
+    table, td { border-collapse: collapse; }
+    /* CLIENT-SPECIFIC RESETS */
+    .ReadMsgBody{ width: 100%; }
+    .ExternalClass{ width: 100%; }
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height: 100%; }
+    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    img { -ms-interpolation-mode: bicubic; }
+    body, table, td, p, a, li, blockquote { -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
+    /* Email Styling*/
+    h1 {
+      font-family: S-CoreDream-6Bold;
+      font-size: 20px;
+      line-height: 24px;
+      word-break: keep-all;
+      margin: unset;
+    }
+    h2 {
+      font-family: S-CoreDream-5Medium;
+      font-size: 20px;
+      line-height: 24px;
+      word-break: keep-all;
+      margin: unset;
+      font-weight: 500 !important;
+    }
+    h3,
+    li > span,
+    li > a {
+      font-family: S-CoreDream-3Light;
+      font-size: 14px;
+      line-height: 18px;
+      word-break: keep-all;
+      margin: unset;
+      font-weight: 300 !important;
+    }
+    h4 {
+      font-family: S-CoreDream-4Regular;
+      font-size: 16px;
+      line-height: 20px;
+      word-break: keep-all;
+      margin: unset;
+      font-weight: 400 !important;
+    }
+    p,
+    a > span {
+      font-family: S-CoreDream-4Regular;
+      font-size: 12.5px;
+      color: #E4E4E4;
+      word-break: keep-all;
+      margin: unset;
+      font-weight: 400 !important;
+    }
+  </style>
+</head>
+<body style="border: 1px solid #F1F2F3; border-top: 5px solid #00AFA0; background-color: #FFF;">
+  <section style="margin: 30px 40px;" alt="header">
+      <img style="margin-bottom: 5px;" src="https://usimsa.blob.core.windows.net/images/email/creatrip-logo.png" alt="logo">
+    <div>
+      <h1>
+        Global overseas data, all USIMSA.
+      </h1>
+      <h3 style="margin-top: 6px;">
+        Thank you for using the USIMSA X Creatrip eSIM service.
+      </h3>
+      <h3>
+        You can activate eSIM by entering a QR code or an activation code to the device you are using.
+      </h3>
+    </div>
+  </section>
+  <section style="padding: 15px 40px 30px; background-color: #F8F8F8;" alt="eSim-information">
+    <h2 style="margin-bottom: 10px;">
+      1. esim Information
+    </h2>
+    <table style="height: fit-content; width: 100%; margin: 20px auto; padding: 0 20px; border: 1px solid #F1F2F3; background-color: #FFF;" cellpadding="0" cellspacing="0">
+      <tr>
+        <td align="center" valign="center">
+          <img style="width: 200px; height: 200px; margin: 20px 0; padding: 10px 0;" src="{{ QR코드 }}" alt="eSim QR코드">
+        </td>
+      </tr>
+      <tr style="padding: 20px 0;">
+        <td colspan="3" align="left" valign="center">
+          <div style="margin: 0 40px; padding: 20px 0; border-top: 1px solid #F1F2F3;">
+            <h1 style="width: 100%;">
+              SM-DP+Address
+            </h1>
+            <h4>
+              {{SIM-SMDP}}
+            </h4>
+          </div>
+          <div style="margin: 0 40px; padding: 20px 0; border-top: 1px solid #F1F2F3;">
+            <h1>
+              Activation Code
+            </h1>
+            <h4>
+              {{SIM-CODE}}
+            </h4>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <div>
+    </div>
+    <ul style="list-style-type: circle">
+      <li>
+        <h3>
+          Installation is possible only in a network environment.(Wifi or Cellular)
+        </h3>
+      </li>
+      <li>
+        <h3>
+          Please check the allowed status of "data roaming" and proceed with the installation
+        </h3>
+      </li>
+      <li>
+        <h3>
+          Camera app or settings on your phone &gt; Cellular &gt; Please select the additional cellular plan and scan the QR code
+        </h3>
+      </li>
+      <li>
+        <h3>
+          If you can't scan the QR code, you can manually set it by entering the information yourself
+        </h3>
+      </li>
+      <li>
+        <span>
+          If the data doesn't work,
+        </span>
+        <a style="text-decoration: none;" href="https://glib-mink-bd7.notion.site/APN-232e78ccde13485da19d884e91ceaed5" target="_blank">
+          Please try setting the apn manual.
+        </a>
+      </li>
+      <li>
+        <h3>
+          lease refer to the installation method
+        </h3>
+      </li>
+      <li>
+        <a style="text-decoration: none;" href="https://glib-mink-bd7.notion.site/88fea1e35efa4d86be9d59af54bce650" target="_blank">
+          page for detailed installation methods.
+        </a>
+      </li>
+    </ul>
+  </section>
+  <section style="margin: 30px 40px;" alt="purchase-information">
+    <h2 style="margin-bottom: 10px;">
+      2. Purchase information
+    </h2>
+    <table style="height: fit-content; width: 100%; margin: 20px auto; padding: 0 10px;" cellpadding="0" cellspacing="0">
+      <tr>
+        <td style="width: 70px; padding: 10px; border: 1px solid #F1F2F3;">
+          <h4>
+            Order_NO
+          </h4>
+        </td>
+        <td style="padding: 10px; border: 1px solid #F1F2F3;">
+          <h4>
+            {{개별주문번호}}
+          </h4>
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 70px; padding: 10px; border: 1px solid #F1F2F3;">
+          <h4>
+            Order_Date
+          </h4>
+        </td>
+        <td style="padding: 10px; border: 1px solid #F1F2F3;">
+          <h4>
+            {{주문일자}}
+          </h4>
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 70px; padding: 10px; border: 1px solid #F1F2F3;">
+          <h4>
+            Product name
+          </h4>
+        </td>
+        <td style="padding: 10px; border: 1px solid #F1F2F3;">
+          <h4>
+            {{개별상품명}}
+          </h4>
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 70px; padding: 10px; border: 1px solid #F1F2F3;">
+          <h4>
+            Validity
+          </h4>
+        </td>
+        <td style="padding: 10px; border: 1px solid #F1F2F3;">
+          <h4>
+            180 days from the date of purchase
+          </h4>
+        </td>
+      </tr>
+    </table>
+    <div style="margin: 60px 0; padding: 20px; background-color: #F8F8F8;">
+      <h3 style="text-align: center;">
+        Precautions
+      </h3>
+      <ul style="margin-top: 30px; list-style-type: circle">
+        <li>
+          <h3>
+            If your trip is canceled, you can request a refund within three days of purchase.
+          </h3>
+        </li>
+        <li>
+          <h3>
+            You can't get a refund if the purchase month has passed.
+          </h3>
+        </li>
+        <li>
+          <h3>
+            Once installed, eSIM cannot be installed from another mobile phone.
+          </h3>
+        </li>
+        <li>
+          <h3>
+            You can use it immediately after installation.
+          </h3>
+        </li>
+        <li>
+          <h3>
+            Please contact the customer center for usage.
+          </h3>
+        </li>
+      </ul>
+      <h3 style="margin-top: 50px; padding-left: 24px;">
+        If you have any questions, please contact the customer center.
+      </h3>
+      <h3 style="margin-top: 16px; padding-left: 24px;">
+        Call:&nbsp;+82-70-4327-1955(10:00~18:00)
+      </h3>
+      <h3 style="padding-left: 24px;">
+        Mail:&nbsp;support@creatrip.com
+      </h3>
+    </div>
+  </section>
+  <section style="position: relative; padding: 15px 40px 30px; background-color: #F8F8F8; border-top: 1px solid #F1F2F3;" alt="footer">
+    <div>
+      <a style="text-decoration: none;" href="https://usimsa.com" target="_blank">
+        <img style="width: 30px;" src="https://usimsa.blob.core.windows.net/images/email/%EC%9C%A0%EC%8B%AC%EC%82%ACurl-%EB%A7%81%ED%81%AC.png " />
+      </a>
+      <a style="text-decoration: none;" href="https://www.instagram.com/usimsa_official" target="_blank">
+        <img style="width: 30px;" src="https://usimsa.blob.core.windows.net/images/email/%EC%9D%B8%EC%8A%A4%ED%83%80url-%EB%A7%81%ED%81%AC.png " />
+      </a>
+      <a style="text-decoration: none;" href="https://pf.kakao.com/_fqTkK/chat" target="_blank">
+        <img style="width: 30px;" src="https://usimsa.blob.core.windows.net/images/email/%EC%B9%B4%EC%B9%B4%EC%98%A4url-%EB%A7%81%ED%81%AC.png " />
+      </a>
+    </div>
+    <p style="margin-top: 10px;">
+      가제트코리아㈜ 인천시 중구 화랑목로 70-4, 1층 1호 | 유심사 고객센터: 1661-0158
+    </p>
+    <p>
+      대표자:유상혁 | 사업자등록번호: 786-87-01837 통신판매신고번호: 2021-인천중구-0886
+    </p>
+    <p>
+      © 2020 Gadget Korea INC. All rights reserved
+    </p>
+    <div style="margin-top: 10px;">
+      <a style="text-decoration: none;" href="https://glib-mink-bd7.notion.site/2d0b3506a70c4a75898603075657da4f" target="_blank">
+        <span style="color: #e3e3e3;">
+          이용약관
+        </span>
+      </a>
+      <a style="text-decoration: none;" href="https://glib-mink-bd7.notion.site/1f1c01137c744f46bfa7b62da9efbf48" target="_blank">
+        <span style="color: #e3e3e3;">
+          개인정보처리방침
+        </sp>
+      </a>
+      <a style="position: absolute; right: 10%; bottom: 10px; text-decoration: none;" href="https://www.usimsa.com" target="_blank">
+        <img src="https://usimsa.blob.core.windows.net/images/email/%EA%B0%80%EC%A0%9C%ED%8A%B8%EC%BD%94%EB%A6%AC%EC%95%84-%EB%A1%9C%EA%B3%A0.png" />
+      </a>
+    </div>
+  </section>
+</body>
+</html>
