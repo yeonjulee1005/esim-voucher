@@ -67,7 +67,7 @@
 </head>
 <body>
   <center class="wrapper">
-    <table class="main" width="100%">
+    <table class="main">
       <tr>
         <td>
           <img alt="로고" style="width: 78px;" src="https://usimsa.blob.core.windows.net/images/email/voucher_creatrip_logo.svg" />
@@ -99,7 +99,11 @@
       </tr>
       <tr>
         <td style="padding: 50px 0; text-align: center;">
-          <img alt="QR 코드" style="width: 100%; height: 100%; max-width: 130px; max-height: 130px;" src="{{ QR 코드 }}" />
+          <img
+            style="width: 100%; height: 100%; max-width: 130px; max-height: 130px;"
+            src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data={{smdp}}"
+            alt="QR 코드"
+          />
         </td>
       </tr>
       <tr>
@@ -112,9 +116,7 @@
                 </h3>
               </td>
               <td>
-                <h3 style="font-weight: 300; text-align: right;">
-                  {{ SIM-SMDP }}
-                </h3>
+                <h3 style="font-weight: 300; text-align: right;">{{simSmdp}}</h3>
               </td>
             </tr>
           </table>
@@ -130,9 +132,7 @@
                 </h3>
               </td>
               <td>
-                <h3 style="font-weight: 300; text-align: right;">
-                  {{ SIM-CODE }}
-                </h3>
+                <h3 style="font-weight: 300; text-align: right;">{{simCode}}</h3>
               </td>
             </tr>
           </table>
@@ -203,9 +203,7 @@
                 </h3>
               </td>
               <td>
-                <h3 style="font-weight: 300; text-align: right;">
-                  {{ 개별주문번호 }}
-                </h3>
+                <h3 style="font-weight: 300; text-align: right;">{{orderId}}</h3>
               </td>
             </tr>
           </table>
@@ -221,9 +219,7 @@
                 </h3>
               </td>
               <td>
-                <h3 style="font-weight: 300; text-align: right;">
-                  {{ 주문일자 }}
-                </h3>
+                <h3 style="font-weight: 300; text-align: right;">{{createdAt}}</h3>
               </td>
             </tr>
           </table>
@@ -239,9 +235,7 @@
                 </h3>
               </td>
               <td>
-                <h3 style="font-weight: 300; text-align: right;">
-                  {{ 개별상품명 }}
-                </h3>
+                <h3 style="font-weight: 300; text-align: right;">{{product}}</h3>
               </td>
             </tr>
           </table>
